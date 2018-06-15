@@ -4,6 +4,9 @@
     .wrapper {
     max-width: 480px;
     margin: 0 auto;
+    grid-auto-columns: 1fr, 1fr;
+    grid-auto-rows: repeat(7,1fr);
+    display: grid;
     }
 
     .wrapper > div {
@@ -11,8 +14,6 @@
     background-color: #ccc;
     padding:1em;
     color: #666;
-    display: grid;
-    
     }
     .a {
     grid-column: 1/3;
@@ -53,13 +54,13 @@
     .g {
     grid-column: 1/2;
     grid-row: 6;
-    height: 250;
+    height: 250px;
     background-image: url("http://placehold.it/240x250/ccc");
     }
     .h {
     grid-column: 2/3;
     grid-row: 6;
-    height: 250;
+    height: 250px;
     background-image: url("http://placehold.it/240x250/ccc");
     }
     .i {
